@@ -1,24 +1,37 @@
-# README
+Ruby version
+  ruby 3.1.2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails version
+  Rails 6.1.6.1
 
-Things you may want to cover:
+DMM WEBCAMP（応用課題）
 
-* Ruby version
+本の感想を投稿するアプリ
 
-* System dependencies
+『Bookers2』
 
-* Configuration
+〜〜〜機能〜〜〜
 
-* Database creation
+deviseを用いたログイン機能
 
-* Database initialization
+投稿機能
 
-* How to run the test suite
+コメント・いいね機能（非同期通信）
 
-* Services (job queues, cache servers, search engines, etc.)
+フォロー機能
 
-* Deployment instructions
+検索機能（ユーザー・投稿）
 
-* ...
+相互フォローによるDM機能
+
+chart.js を用いたグラフ
+
+指定した日の投稿数を非同期にて表示
+
+グループ機能
+
+グループオーナーからメンバーへの一斉メール機能
+
+星５のレビュー機能
+
+本のカテゴリ付け
