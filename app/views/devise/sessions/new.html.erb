@@ -1,27 +1,27 @@
-<div class='container'>
-  <div class='row'>
-    <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0">
-      <h2>Log in</h2>
+<div class="container">
+  <div class="row no-gutters">
+    <div class="col-md-5 col-sm-10 mx-2 mx-sm-auto shadow-lg rounded px-0 my-5">
+      <h2 class="text-white bg-dark p-4 mb-0">Log in</h2>
       <%= form_with model: @user, url: session_path(resource_name), local: true do |f| %>
-        <div class="field">
+        <div class="field text-center">
           <%= f.label :name %><br />
           <%= f.text_field :name, autofocus: true, class: "name" %>
         </div>
-        <div class="field">
+        <div class="field text-center">
           <%= f.label :password %><br />
           <%= f.password_field :password, autocomplete: "off", class: "password" %>
         </div>
         <% if devise_mapping.rememberable? -%>
-          <div class="field">
+          <div class="field text-center">
             <%= f.check_box :remember_me %>
             <%= f.label :remember_me %>
           </div>
         <% end -%>
         <div class="actions">
-          <%= f.submit "Log in" ,class: 'btn btn-sm btn-primary'%>
+          <%= f.submit "Log in" ,class: 'btn btn-lg btn-block btn-primary'%>
         </div>
       <% end %>
-      <%= render "devise/shared/links" %>
+       <div class="text-right"><%= render "devise/shared/links" %></div>
     </div>
   </div>
 </div>
