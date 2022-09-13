@@ -11,7 +11,7 @@
       <tr>
         <td><%= image_tag user.get_profile_image, size: '50x50' %></td>
         <td><%= user.name %></td>
-        <td id="followings_count_<%= user.id %>"><%= render "relationships/followings_count", user: user %></td>
+        <td id="followings_count_<%= user.id %>">フォロー数:<%= user.followings.count %></td>
         <td>フォロワー数:<%= user.followers.count %></td>
         <td id="follow_btn_<%= user.id %>"><%= render "relationships/relationship", user: user %></td>
         <td><%= link_to 'Show', user %></td>
