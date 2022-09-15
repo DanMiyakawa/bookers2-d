@@ -26,6 +26,7 @@ document.addEventListener('turbolinks:load', function() {
     plugins: [ dayGridPlugin, interactionPlugin ]
     
   });
+  
 
   calendar.render();
 });
