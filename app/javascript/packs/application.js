@@ -24,6 +24,7 @@ document.addEventListener('turbolinks:load', function() {
 
   var calendar = new Calendar(calendarEl, {
     plugins: [ dayGridPlugin, interactionPlugin ]
+    
   });
 
   calendar.render();
